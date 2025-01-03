@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MyDrugs</title>
+        <style>
+            /*Estilos basicos para la tienda online*/
+            body{
+                font-family: Arial,sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .producto{
+                width: 200px;
+                height: 250px;
+                border: 1px solid #ddd;
+                margin: 10px;
+                padding: 10px;
+                display: inline-block;
+            }
+            .producto img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+            .producto h1 {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .producto p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MyDrugs</h1>
+        <div class="productos">
+            <!--producto 1-->
+            <div class="producto">
+            <img src="producto 1.jpg"alt="producto 1">
+            <h1>producto 1</h1>
+            <p>descripcion del producto 1</p>
+            <p>precio 1$</p>
+            </div>
+            <button id="boton-compra" onclick="redirigirnequi()">compra ahora</button>
+            <script>
+                function redirigirnequi() {
+                    var urlnequi = "(link unavalible)"; //url de nequi var producto = "tu producto"; // descripcion del producto
+                    var urlpago = urlnequi + "pagar/"+ producto + "/" + precio + "/" + descripcion;
+                    window.location.href = urlpago;
+                }
+                
